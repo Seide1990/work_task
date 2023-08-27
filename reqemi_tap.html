@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  >
+        function random(x,y){
+            let gedis=10;
+            let bal=0;
+           var komp_secim=(Math.floor(Math.random()*(y-x)+x))
+            for (i=0;i<gedis;i++){
+             let secim=prompt(x+' ve '+y+' araliginda eded daxil edin');
+        if(secim==komp_secim){
+          komp_secim=(Math.floor(Math.random()*(y-x)+x))
+          gedis=gedis+2;
+          bal+=1;
+        }
+        }
+        return 'gedis haqqiniz bitdi topladiginiz netice  '+ bal}
+        alert(random(1,30));
+         </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

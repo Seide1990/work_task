@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  >
+        function foo(x){
+            c='';
+            for ( i of x){
+                i=i.charCodeAt(0)
+              if (i>=65 && i<=90){
+              i=i+32;
+             c+= String.fromCharCode(i);
+        
+              }
+              else{
+                i=i-32;
+                c+= String.fromCharCode(i);
+              }
+            
+            }
+        
+            return c
+          }
+          console.log(foo('sAlaM WorLd'))
+         </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
